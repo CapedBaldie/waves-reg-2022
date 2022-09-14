@@ -51,9 +51,6 @@ img {
   background-color: rgba(255, 255, 255);
   color: black;
   font-weight: bolder;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
 }
 
 #mask {
@@ -98,7 +95,7 @@ img {
 
 .submit-btn {
   margin-top: 2rem;
-  background-color: white;
+  background-color: rgb(255, 255, 255, 0.9);
   color: black;
   width: 10rem;
   height: 3rem;
@@ -109,11 +106,8 @@ img {
 }
 
 .submit-btn:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
   color: black;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .close {
