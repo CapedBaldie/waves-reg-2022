@@ -17,19 +17,12 @@ body {
 }
 
 img {
-  width: 30rem;
+  height: 13rem;
+  width: 26rem;
+  filter: drop-shadow(0 0 1rem black);
   object-fit: contain;
-  padding-left: 30px;
+  padding: 0%;
   margin: 0%;
-}
-
-.logo {
-  width: 30rem;
-  filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .links {
@@ -40,65 +33,59 @@ img {
 
 .link {
   margin: 0.5rem;
-  background-color: rgba(0, 0, 0);
+  background-color: black;
+  color: white;
   width: 15rem;
-  color: rgb(255, 255, 255);
   padding: 1rem 2rem;
   text-decoration: none;
   border-radius: 2rem;
- 
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
   text-align: center;
 }
 
 .link:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255);
   color: black;
-  transition-duration: 0.5s;
+  font-weight: bolder;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #mask {
   display: none;
-  position: fixed; 
-  top: 0;
-  margin: 0%;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.4); 
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .form {
-  background-color: rgba(0, 0, 0);
-  z-index: 1; 
-  width: 17rem;
-  height: 25rem;
-  color: rgb(255, 255, 255);
+  display: none;
+  position: fixed;
+  z-index: 10;
+  background-color: black;
+  width: 18rem;
+  height: 28rem;
+  color: white;
   padding: 1rem 2rem;
+  margin-top: 10rem;
   text-decoration: none;
-  border-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  border-color: black;
   border-style: solid;
   border-width: thin;
   text-align: center;
-  display: none;
-  position: fixed;
-  top: 350px;
+  flex-direction: column;
 }
 
 .form-control {
   margin: 0.5rem;
   background-color: rgba(255, 255, 255, 0);
   width: 10rem;
-  color: rgb(255, 255, 255);
-  padding: 1rem 2rem;
-  border-color: rgb(255, 255, 255);
-  border-style: solid;
-  border-width: thin;
-  text-align: center;
-}
-
-.submit-btn {
-  margin: 0.5rem;
-  background-color: rgba(255, 255, 255, 0);
   color: white;
   padding: 1rem 2rem;
   border-color: white;
@@ -107,38 +94,41 @@ img {
   text-align: center;
 }
 
+.submit-btn {
+  margin-top: 2rem;
+  background-color: black;
+  color: white;
+  width: 10rem;
+  height: 3rem;
+  border-color: white;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+}
+
 .submit-btn:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  color: black;
+  background-color: whitesmoke;
 }
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgb(255, 255, 255);
-  opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: rgb(71, 71, 71);
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-  color: rgb(71, 71, 71);
-} 
 
 .close {
   color: #818181;
   font-size: 30px;
   font-weight: bold;
-  padding-left: 14rem;
+  float: right;
 }
 
 .close:hover,
 .close:focus {
-  color: rgb(255, 255, 255);
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
 
-.register-heading {
-  text-decoration: none;
+.form-heading {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
