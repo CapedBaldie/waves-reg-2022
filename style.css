@@ -17,8 +17,10 @@ body {
 }
 
 img {
-  height: 13rem;
-  width: 26rem;
+  height: 13vh;
+  width: 26vw;
+  min-width: 322px;
+  min-height: 161px;
   filter: drop-shadow(0 0 1rem black);
   object-fit: contain;
   padding: 0%;
@@ -96,8 +98,8 @@ img {
 
 .submit-btn {
   margin-top: 2rem;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   width: 10rem;
   height: 3rem;
   border-color: white;
